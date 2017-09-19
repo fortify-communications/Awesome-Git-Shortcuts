@@ -1,0 +1,13 @@
+alias gitpb='git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`'
+alias gitc='read gitmsg && git commit -m "$gitmsg"'
+alias gitp='git pull --rebase'
+alias gits='git status'
+alias gitr='git checkout dev'
+alias gitb='git branch'
+alias tags='git tag --sort version:refname'
+alias co='git checkout -b '
+alias ll='ls -la'
+alias gitclean='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d && git gc'
+
+alias ..='cd ..'
+alias j='jobs'
